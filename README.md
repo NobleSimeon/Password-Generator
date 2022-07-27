@@ -1,0 +1,1 @@
+This is a simple form registration but with a feature to generate random password.
