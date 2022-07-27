@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Password Generator</title>
+</head>
+<body>
+    <main>
+        <div class="note-container">
+            <p class="note">NB:When you click USE, the generated password copies to your clipboard automatically. and helps you to input it in your password input box</p>
+        </div>
+        
+        
+        <form action="#">
+            <h2>Registration</h2>
+            <div class="input-box">
+                <input type="text" name="Fullname" id="fullname" required>
+                <label for="fullname"></label>
+            </div>
+            <div class="input-box">
+                <input type="password" name="Password" id="password" required>
+                <label for="password"></label>
+            </div>
+            <button type="submit">Register</button>
+            <div class="horizontal-rule"></div>
+
+            <small>If you want a random generated password <br/><button type="button" class="open">Click here</button>  to open password genrator.</small>
+        </form>
+
+        <div class="password-generator">
+            <h2>Password Generator</h2>
+            <div class="result-container">
+                <span id="result"></span>
+                <!-- <button class="clipboard" id="clipboard">Copy</button> -->
+            </div>
+            <div class="settings">
+                <div class="setting">
+                    <label for="characterAmountNumber">Password Length</label>
+                    <div>
+                        <input type="range" name="characterAmountRange" id="characterAmountRange" min="8" max="50" value="16">
+                        <input type="number" name="characterAmountNumber" id="characterAmountNumber" min="8" max="50" value="16">
+                    </div>
+                </div>
+
+                <div class="setting">
+                    <label for="includeLowercase">Include Lowercase</label>
+                    <input type="checkbox" name="includeLowercase" id="includeLowercase" checked>
+                </div>
+
+                <div class="setting">
+                    <label for="includeUppercase">Include Uppercase</label>
+                    <input type="checkbox" name="includeUppercase" id="includeUppercase">
+                </div>
+
+                <div class="setting">
+                    <label for="includeNumber">Include Number</label>
+                    <input type="checkbox" name="includeNumber" id="includeNumber">
+                </div>
+
+                <div class="setting">
+                    <label for="includeSymbols">Include Symbols</label>
+                    <input type="checkbox" name="includeSymbols" id="includeSymbols">
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="generate">Generate</button>
+                <button id="use">Use</button>
+            </div>
+        </div>
+
+        
+    </main>
+</body>
+</html>
